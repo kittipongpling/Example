@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>หัดทำ ParticlesJS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="particles-js">
+        <div class="info-box">
+            <div class="info">
+                <h1>particles-JS-Amazing</h1>
+                <p>kfjsdlkjlksdjflnkvmspkdjvipdvhnjisvd'jodj;vksdj</p>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="node_modules/particles.js/particles.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    // จำนวนเม็ด
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 500
+                    }
+                },
+                "color": {
+                    // สีของ เม็ด
+                    "value": "#68FAFE"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 2,
+                        "color": "#FAFDFB "
+                    },
+                    "polygon": {
+                        "nb_sides": 300
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 20,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 80,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 300,
+                    "color": "#ff5722",
+                    "opacity": 0.4,
+                    "width": 2
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 25,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": true,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": [
+                        "grap","bubble"
+                        ]
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 0.7
+                        }
+                    },
+                    "bubble": {
+                        "distance": 600,
+                        "size": 12,
+                        "duration": 1,
+                        "opacity": 0.8,
+                        "speed": 2
+                    },
+                    "repulse": {
+                        "distance": 400,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 20
+                    },
+                    "remove": {
+                        "particles_nb": 10
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>
